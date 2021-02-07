@@ -1,0 +1,9 @@
+$primary: #131b5c;
+$secondary: #ed3237;
+$dark: #222;
+
+@mixin h2 {
+  font-weight: 700;
+  font-size: 5rem;
+  line-height: 65px;
+}

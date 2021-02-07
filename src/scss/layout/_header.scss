@@ -1,0 +1,185 @@
+.header {
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.5);
+  background: $primary;
+
+  &__teaser {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__leftBlock {
+    display: flex;
+    align-items: center;
+  }
+
+  &__rightBlock {
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 286px;
+    height: 84px;
+    background: #fff;
+    margin-right: 40px;
+    margin-left: -15px;
+    & img {
+      width: 210px;
+    }
+  }
+
+  &__nav .list {
+    display: flex;
+    align-items: center;
+    & .list__item {
+      margin-right: 40px;
+      &:last-child {
+        margin-right: 0;
+      }
+      & .list__link {
+        position: relative;
+        font-size: 1.6rem;
+        font-weight: 500;
+        color: #fff;
+
+        &::before {
+          content: '';
+          position: absolute;
+          bottom: -5px;
+          display: block;
+          width: 0%;
+          height: 2px;
+          background: $secondary;
+          transition: 0.3s;
+        }
+
+        &:hover::before {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  &__contact {
+    display: flex;
+    align-items: center;
+    margin-right: 22px;
+  }
+
+  &__contactIcon {
+    width: 38px;
+    height: 38px;
+    background: $secondary;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 18px;
+    animation: contactPuls 2s infinite;
+  }
+
+  @keyframes contactPuls {
+    0% {
+      transform: scale(0.95);
+      box-shadow: 0 0 0 0 rgba(237, 50, 55, 0.7);
+    }
+    70% {
+      transform: scale(1);
+      box-shadow: 0 0 0 10px rgba(0, 255, 0, 0);
+    }
+    100% {
+      transform: scale(0.95);
+      box-shadow: 0 0 0 0 rgba(0, 255, 0, 0);
+    }
+  }
+
+  &__contactCall {
+    color: #fff;
+    font-size: 1.8rem;
+    transition: 0.3s;
+
+    &:hover {
+      color: $secondary;
+    }
+  }
+}
+
+.langs {
+  width: 75px;
+  position: relative;
+}
+
+.langs:hover .lang__dropdown {
+  opacity: 1;
+  visibility: visible;
+  top: 35px;
+}
+
+.langs:hover .icon-lang {
+  transform: rotate(180deg);
+}
+
+.lang__current {
+  display: flex;
+  align-items: center;
+  padding-left: 16px;
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 500;
+  background: #1d2674;
+  height: 35px;
+  border-radius: 5px;
+  cursor: pointer;
+  & .icon-lang {
+    display: flex;
+    margin-left: 8px;
+    transition: 0.3s;
+    &::before {
+      color: #fff;
+      font-size: 1.3rem;
+    }
+  }
+}
+
+.lang__dropdown {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  top: 45px;
+  display: flex;
+  flex-direction: column;
+  width: 75px;
+  transition: 0.3s;
+}
+
+.lang {
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  background: #1d2674;
+  width: 100%;
+  height: 35px;
+  transition: 0.3s;
+  padding-left: 16px;
+
+  &:first-child {
+    border-top: 1px solid #2b3584;
+  }
+
+  &:last-child {
+    border-radius: 0px 0px 5px 5px;
+  }
+
+  &:hover {
+    background: #2b3584;
+  }
+}

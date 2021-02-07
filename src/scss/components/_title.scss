@@ -1,0 +1,9 @@
+.title {
+  @include h2;
+  &_light {
+    color: $secondary;
+  }
+  &_dark {
+    color: $dark;
+  }
+}

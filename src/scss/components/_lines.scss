@@ -1,0 +1,21 @@
+.lines {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+
+    & span {
+      flex-shrink: 0;
+      height: 100%;
+      display: inline-block;
+      width: 1px;
+      background: #e7e7e7;
+    }
+  }
+}
