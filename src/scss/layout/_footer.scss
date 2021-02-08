@@ -1,0 +1,137 @@
+.footer {
+  position: relative;
+  background: $primary;
+
+  &__abstract {
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+  }
+  &__items {
+    display: flex;
+  }
+  &__teaser {
+    max-width: 395px;
+    margin-right: 175px;
+  }
+  &__item {
+    width: 50%;
+    &:first-child {
+      display: flex;
+      justify-content: flex-end;
+      padding: 45px 0;
+    }
+  }
+
+  &__contact {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #2f356d;
+    &Icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 50px;
+      height: 50px;
+      color: #fff;
+      font-size: 1.8rem;
+      border: 1px solid #2f356d;
+      border-radius: 50%;
+      margin-right: 20px;
+    }
+    &Link {
+      display: block;
+      font-size: 1.6rem;
+      line-height: 24px;
+      color: #fff;
+      transition: 0.3s;
+
+      &:hover {
+        color: $secondary;
+      }
+    }
+  }
+  &Map {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__subscribe {
+    display: flex;
+    &Item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      font-size: 1.8rem;
+      color: #fff;
+      background: #2f356d;
+      box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.05);
+      margin-right: 10px;
+      transition: 0.3s;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &:hover {
+        background: #fff;
+        color: $secondary;
+      }
+    }
+  }
+}
+
+.separator {
+  width: 3px;
+  height: 21px;
+  background: #fff;
+  margin: 0 10px;
+}
+
+.fz18 {
+  font-size: 1.8rem;
+}
+
+.buttonUp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 5%;
+  right: 3%;
+  width: 64px;
+  height: 64px;
+  font-size: 1.7rem;
+  background: $primary;
+  border-radius: 50%;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+
+  &:hover {
+    color: $secondary;
+  }
+}
+
+.copy {
+  border-top: 1px solid #2f356d;
+  background: $primary;
+  padding: 15px 0;
+  &__teaser {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__text {
+    font-size: 1.4rem;
+    line-height: 22px;
+    color: #88a1b9;
+  }
+}

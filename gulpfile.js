@@ -16,6 +16,7 @@ function bmcss() {
   return src([
     'node_modules/bootstrap/dist/css/bootstrap-grid.css',
     'node_modules/owl.carousel/dist/assets/owl.carousel.css',
+    'node_modules/aos/dist/aos.css',
   ])
     .pipe(concat('bundle.min.css'))
     .pipe(csso({ comments: false }))
@@ -45,7 +46,7 @@ function bmjs() {
     'node_modules/inputmask/dist/jquery.inputmask.js',
     'node_modules/parallax-js/dist/parallax.js',
     'node_modules/owl.carousel/dist/owl.carousel.js',
-    'node_modules/rellax/rellax.js',
+    'node_modules/aos/dist/aos.js',
   ])
     .pipe(concat('bundle.min.js'))
     .pipe(uglify())
