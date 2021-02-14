@@ -3,17 +3,50 @@ $(function () {
     $('html, body').animate({ scrollTop: 0 }, 1000);
   });
 
+  $('.hamburger').on('click', function () {
+    $(this).toggleClass('is-active');
+    $('.headerMob__commonBlock').slideToggle().toggleClass('d-block');
+  });
+
   // OWL
-  const partnersBtn = [
+  const sliderBtn = [
     '<span class="icon-slider inverse"></span>',
     '<span class="icon-slider"></span>',
   ];
 
-  $('.partnersSlider').owlCarousel({
-    items: 5,
-    margin: 18,
+  $('.about__slider-inner').owlCarousel({
+    items: 1,
+    margin: 30,
+    smartSpeed: 1000,
+    mouseDrag: false,
+    dots: false,
     nav: true,
-    navText: partnersBtn,
+    navText: sliderBtn,
+  });
+
+  $('.partnersSlider').owlCarousel({
+    margin: 20,
+    smartSpeed: 1000,
+    dots: false,
+    nav: true,
+    navText: sliderBtn,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      576: {
+        items: 2,
+      },
+      768: {
+        items: 3,
+      },
+      992: {
+        items: 4,
+      },
+      1200: {
+        items: 5,
+      },
+    },
   });
 
   //  INPUTMASK

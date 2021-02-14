@@ -1,21 +1,33 @@
 .footer {
   position: relative;
-  background: $primary;
 
   &__abstract {
     position: absolute;
     bottom: -2px;
     left: 0;
   }
+  &__back {
+    width: 50%;
+    position: absolute;
+    left: 0;
+    top: -30px;
+    & img {
+      width: 100%;
+    }
+  }
   &__items {
+    position: relative;
     display: flex;
+    background: $primary;
   }
   &__teaser {
+    position: relative;
     max-width: 395px;
     margin-right: 175px;
   }
   &__item {
     width: 50%;
+    position: relative;
     &:first-child {
       display: flex;
       justify-content: flex-end;
@@ -120,6 +132,7 @@
 }
 
 .copy {
+  position: relative;
   border-top: 1px solid #2f356d;
   background: $primary;
   padding: 15px 0;

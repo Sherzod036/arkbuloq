@@ -17,6 +17,7 @@ function bmcss() {
     'node_modules/bootstrap/dist/css/bootstrap-grid.css',
     'node_modules/owl.carousel/dist/assets/owl.carousel.css',
     'node_modules/aos/dist/aos.css',
+    'node_modules/hamburgers/dist/hamburgers.css',
   ])
     .pipe(concat('bundle.min.css'))
     .pipe(csso({ comments: false }))

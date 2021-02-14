@@ -3,6 +3,7 @@
 *::before {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   -webkit-tap-highlight-color: transparent;
 }
 
@@ -20,7 +21,7 @@ body {
   font-family: 'Ubuntu';
   font-weight: 400;
   color: $dark;
-  overflow-x: hidden;
+  // overflow-x: hidden;
 }
 
 body::-webkit-scrollbar {
