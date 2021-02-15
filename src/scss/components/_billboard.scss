@@ -1,0 +1,15 @@
+.billboard {
+  position: relative;
+  width: 100%;
+  height: 398px;
+  overflow: hidden;
+  border-radius: 10px;
+  background-position: center !important;
+  background-size: cover !important;
+  &__pic {
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}

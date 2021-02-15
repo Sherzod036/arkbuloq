@@ -48,6 +48,7 @@ function bmjs() {
     'node_modules/parallax-js/dist/parallax.js',
     'node_modules/owl.carousel/dist/owl.carousel.js',
     'node_modules/aos/dist/aos.js',
+    'node_modules/scrollmagic/scrollmagic/uncompressed/ScrollMagic.js',
   ])
     .pipe(concat('bundle.min.js'))
     .pipe(uglify())

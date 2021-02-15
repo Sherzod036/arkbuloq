@@ -54,10 +54,41 @@ $(function () {
 
   // PARALLAX
   const scene = $('#scene').get(0);
-  const parallaxInstance = new Parallax(scene);
+  if (scene) {
+    const parallaxInstance = new Parallax(scene);
+  }
 });
 
+// AOS
 AOS.init({
   startEvent: 'DOMContentLoaded',
   once: true,
 });
+
+//SCROLLMAGIC
+function splitScroll() {
+  const investorsTitle = document.querySelector('.page-investors__title');
+  if (investorsTitle) {
+    const controller = new ScrollMagic.Controller();
+    new ScrollMagic.Scene({
+      duration: 580,
+      triggerElement: '.breadcrumbs',
+      triggerHook: 0,
+    })
+      .setPin('.fix-title')
+      .addTo(controller);
+  }
+}
+if (window.innerWidth > 992) {
+  splitScroll();
+}
+
+const scroll = document.getElementById('cards-slider-range');
+if (scroll) {
+  scroll.oninput = function () {
+    let cards = document.getElementById('cards');
+    let total = cards.scrollWidth - cards.offsetWidth;
+    let percentage = total * (this.value / 100);
+    cards.scrollLeft = percentage;
+  };
+}

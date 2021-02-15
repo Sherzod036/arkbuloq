@@ -27,6 +27,21 @@
     width: 650px;
     top: 2%;
   }
+  .breadcrumbs {
+    padding-top: 86px;
+  }
+  .card {
+    min-width: 520px;
+    height: 340px;
+    padding: 40px;
+  }
+  .card__count {
+    font-size: 7rem;
+    margin-top: 5px;
+  }
+  .card::before {
+    height: 200px;
+  }
 }
 
 @media (max-width: 1400px) {
@@ -95,6 +110,15 @@
   }
   .section {
     padding-bottom: 50px;
+  }
+  .tariffs {
+    margin-bottom: 50px;
+  }
+  #cards-slider {
+    margin-bottom: 50px;
+  }
+  .page-investors__items {
+    margin: 50px 0;
   }
   .about__boxes {
     margin: 85px 0;
@@ -168,6 +192,22 @@
   }
   .newsItem__poster {
     height: 300px;
+  }
+  .tariffs__box {
+    padding: 20px;
+  }
+  .page-investors__promo-title {
+    margin-bottom: 50px;
+  }
+  .page-investors__promo-pic {
+    display: none;
+  }
+  .page-investors__inner {
+    height: 400px;
+  }
+  .page-investors__promo-desc {
+    padding-left: 0;
+    height: 400px;
   }
 }
 
@@ -254,6 +294,38 @@
   }
   .footerMap {
     height: 400px;
+  }
+  .page-investors__item {
+    text-align: center;
+  }
+  .page-investors__subtitle {
+    font-size: 2.5rem;
+    line-height: 30px;
+  }
+  .page-investors__desc {
+    font-size: 1.7rem;
+    line-height: 23px;
+    margin-bottom: 25px;
+  }
+  .tariffs__left-block {
+    display: none;
+  }
+  .tariffs__title {
+    text-align: center;
+    line-height: 40px;
+  }
+  .tariffs__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  .page-investors__title {
+    margin-bottom: 15px;
+  }
+  .page-investors__promo-title {
+    text-align: center;
+    line-height: 40px;
   }
 }
 
@@ -344,6 +416,42 @@
     margin-bottom: 15px;
     text-align: center;
   }
+  .breadcrumbs {
+    opacity: 0;
+    padding-bottom: 0;
+    pointer-events: none;
+  }
+  .billboard {
+    height: 280px;
+    &__pic {
+      width: 185px;
+    }
+  }
+  .page-investors__title {
+    margin-bottom: 25px;
+  }
+  .card {
+    min-width: 450px;
+    height: 320px;
+  }
+  .card__desc {
+    font-size: 1.6rem;
+    line-height: 24px;
+  }
+  .card__count {
+    font-size: 6rem;
+  }
+  .page-investors__inner {
+    height: 350px;
+  }
+  .page-investors__promo-desc {
+    height: 350px;
+    text-align: center;
+    line-height: 40px;
+  }
+  .page-investors__promo-rightBlock {
+    width: 100%;
+  }
 }
 
 @media (max-width: 576px) {
@@ -365,6 +473,12 @@
   }
   .partners__desc {
     text-align: center;
+  }
+  .tariffs__box {
+    width: 100%;
+  }
+  .cards {
+    padding-bottom: 50px;
   }
 }
 
@@ -391,6 +505,32 @@
   }
   .footer__abstract {
     display: none;
+  }
+  .tariffs__title {
+    font-size: 2.8rem;
+    line-height: 33px;
+  }
+  .card {
+    min-width: 320px;
+    height: 250px;
+    padding: 15px;
+    &::before {
+      display: none;
+    }
+  }
+  .card__count {
+    display: none;
+  }
+  .card__desc {
+    font-size: 1.5rem;
+  }
+  .page-investors__promo-title {
+    font-size: 2.8rem;
+    line-height: 32px;
+  }
+  .page-investors__promo-desc {
+    font-size: 2.8rem;
+    line-height: 32px;
   }
 }
 

@@ -7,6 +7,8 @@
 @import 'components/lines';
 @import 'components/title';
 @import 'components/button';
+@import 'components/breadcrumbs';
+@import 'components/billboard';
 
 @import 'layout/header';
 @import 'layout/hero';
@@ -16,5 +18,7 @@
 @import 'layout/feedback';
 @import 'layout/partners';
 @import 'layout/footer';
+
+@import 'pages/investors';
 
 @import 'core/responsive';
