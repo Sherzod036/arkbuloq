@@ -49,6 +49,34 @@ $(function () {
     },
   });
 
+  $('.cards').owlCarousel({
+    margin: 30,
+    smartSpeed: 1000,
+    nav: true,
+    navText: sliderBtn,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      992: {
+        items: 2,
+      },
+      1200: {
+        items: 2,
+      },
+    },
+  });
+
+  $('.page-slider').owlCarousel({
+    center: true,
+    items: 1,
+    loop: true,
+    smartSpeed: 1000,
+    nav: true,
+    navText: sliderBtn,
+    margin: 70,
+  });
+
   //  INPUTMASK
   $('#feedback_form input[name="phone"]').inputmask('+\\9\\98 (99) 999 99 99');
 
@@ -81,14 +109,4 @@ function splitScroll() {
 }
 if (window.innerWidth > 992) {
   splitScroll();
-}
-
-const scroll = document.getElementById('cards-slider-range');
-if (scroll) {
-  scroll.oninput = function () {
-    let cards = document.getElementById('cards');
-    let total = cards.scrollWidth - cards.offsetWidth;
-    let percentage = total * (this.value / 100);
-    cards.scrollLeft = percentage;
-  };
 }

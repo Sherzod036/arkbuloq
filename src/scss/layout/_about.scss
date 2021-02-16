@@ -103,11 +103,14 @@
     }
     &-item {
       display: flex;
+      justify-content: center;
       align-items: center;
       width: 85%;
       height: 500px;
       & img {
         display: block;
+        width: 80%;
+        height: 80%;
         transition: 0.5s;
       }
     }

@@ -30,11 +30,6 @@
   .breadcrumbs {
     padding-top: 86px;
   }
-  .card {
-    min-width: 520px;
-    height: 340px;
-    padding: 40px;
-  }
   .card__count {
     font-size: 7rem;
     margin-top: 5px;
@@ -114,9 +109,6 @@
   .tariffs {
     margin-bottom: 50px;
   }
-  #cards-slider {
-    margin-bottom: 50px;
-  }
   .page-investors__items {
     margin: 50px 0;
   }
@@ -144,6 +136,9 @@
     width: 100%;
   }
   .about__slider-item {
+    width: 100%;
+  }
+  .cards .owl-stage-outer {
     width: 100%;
   }
   .benefit {
@@ -208,6 +203,9 @@
   .page-investors__promo-desc {
     padding-left: 0;
     height: 400px;
+  }
+  .logistic__title {
+    font-size: 4rem;
   }
 }
 
@@ -327,6 +325,64 @@
     text-align: center;
     line-height: 40px;
   }
+  .card {
+    margin-bottom: 60px;
+  }
+  .page-about__back {
+    display: none;
+  }
+  .page-about__backTitle {
+    display: none;
+  }
+  .logistic {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .order-class {
+    order: 2;
+  }
+  .logistic__title {
+    line-height: 48px;
+  }
+  .logistic__countries {
+    margin-bottom: 50px;
+  }
+  .logistic__pic {
+    height: 350px;
+  }
+  .page-about__boxes {
+    padding: 50px 0;
+    margin-bottom: 50px;
+  }
+  .page-about__promo {
+    margin-bottom: 50px;
+  }
+  .page-about__promo-pic {
+    max-width: 300px;
+    margin-bottom: 25px;
+  }
+  .page-slider__item {
+    height: 400px;
+  }
+  .page-slider .owl-prev,
+  .page-slider .owl-next {
+    width: 50px;
+    height: 50px;
+  }
+  .page-slider .owl-prev {
+    margin-left: 0;
+  }
+  .page-slider .owl-next {
+    margin-right: 0;
+  }
+  .page-slider .owl-nav {
+    width: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .page-slider__wrapper {
+    padding: 40px 0;
+  }
 }
 
 @media (max-width: 768px) {
@@ -431,12 +487,11 @@
     margin-bottom: 25px;
   }
   .card {
-    min-width: 450px;
-    height: 320px;
+    height: auto;
   }
   .card__desc {
-    font-size: 1.6rem;
-    line-height: 24px;
+    font-size: 1.7rem;
+    line-height: 25px;
   }
   .card__count {
     font-size: 6rem;
@@ -451,6 +506,25 @@
   }
   .page-investors__promo-rightBlock {
     width: 100%;
+  }
+  .page-about__titles {
+    margin-bottom: 15px;
+  }
+  .page-about__topBlock {
+    margin-bottom: 25px;
+  }
+  .logistic__title {
+    font-size: 3.5rem;
+    line-height: 39px;
+  }
+  .logistic__desc,
+  .page-about__desc,
+  .page-about__promo-desc {
+    font-size: 1.7rem;
+    line-height: 25px;
+  }
+  .page-slider__item {
+    height: 350px;
   }
 }
 
@@ -511,18 +585,10 @@
     line-height: 33px;
   }
   .card {
-    min-width: 320px;
-    height: 250px;
-    padding: 15px;
-    &::before {
-      display: none;
-    }
+    padding: 20px;
   }
   .card__count {
     display: none;
-  }
-  .card__desc {
-    font-size: 1.5rem;
   }
   .page-investors__promo-title {
     font-size: 2.8rem;
