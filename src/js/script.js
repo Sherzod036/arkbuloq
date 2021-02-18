@@ -85,6 +85,17 @@ $(function () {
   if (scene) {
     const parallaxInstance = new Parallax(scene);
   }
+
+  const pageNewsTab = $('.page-news__tab');
+  pageNewsTab.on('click', function (e) {
+    e.preventDefault();
+    pageNewsTab.removeClass('page-news__tab--active');
+    $(this).addClass('page-news__tab--active');
+
+    let data = $(this).attr('data-tab');
+    $('.page-news__content').addClass('page-news__content--disabled');
+    $(`#${data}`).removeClass('page-news__content--disabled');
+  });
 });
 
 // AOS

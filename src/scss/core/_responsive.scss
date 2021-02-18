@@ -207,6 +207,17 @@
   .logistic__title {
     font-size: 4rem;
   }
+  .page-news__backTitle {
+    display: none;
+  }
+  .page-news__tab {
+    width: 120px;
+    height: 40px;
+    font-size: 1.6rem;
+  }
+  .page-news__inner {
+    margin-bottom: 50px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -382,6 +393,24 @@
   }
   .page-slider__wrapper {
     padding: 40px 0;
+  }
+  .page-news__inner {
+    flex-direction: column;
+  }
+  .page-news__title {
+    margin-bottom: 15px;
+  }
+  .page-back {
+    margin-bottom: 25px;
+  }
+  .single-news__title {
+    font-size: 4rem;
+  }
+  .single-news__inner {
+    margin-bottom: 35px;
+  }
+  .single-news {
+    margin-bottom: 50px;
   }
 }
 
@@ -597,6 +626,25 @@
   .page-investors__promo-desc {
     font-size: 2.8rem;
     line-height: 32px;
+  }
+  .page-news__title {
+    text-align: center;
+  }
+  .page-news__tabs {
+    flex-direction: column;
+  }
+  .page-news__tab {
+    margin-bottom: 10px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  .single-news__title {
+    font-size: 3.5rem;
+    line-height: 40px;
+  }
+  .single-news__pic {
+    height: 300px;
   }
 }
 
