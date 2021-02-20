@@ -43,7 +43,7 @@ function style() {
 function bmjs() {
   return src([
     'node_modules/jquery/dist/jquery.js',
-    'node_modules/gsap/dist/gsap.js',
+    'node_modules/jquery.cookie/jquery.cookie.js',
     'node_modules/inputmask/dist/jquery.inputmask.js',
     'node_modules/parallax-js/dist/parallax.js',
     'node_modules/owl.carousel/dist/owl.carousel.js',

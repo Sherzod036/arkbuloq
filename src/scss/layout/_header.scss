@@ -1,7 +1,7 @@
 .header {
   position: fixed;
   top: 0;
-  z-index: 999;
+  z-index: 555;
   width: 100%;
   box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.5);
   background: $primary;
@@ -187,7 +187,7 @@
 .headerMob {
   position: fixed;
   top: 0;
-  z-index: 999;
+  z-index: 555;
   width: 100%;
   display: none;
   background: #fff;

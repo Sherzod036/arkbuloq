@@ -3,6 +3,7 @@
 @import 'core/base';
 @import 'core/libs';
 
+@import 'components/preloader';
 @import 'components/subscribe';
 @import 'components/lines';
 @import 'components/title';
@@ -23,5 +24,7 @@
 @import 'pages/about';
 @import 'pages/news';
 @import 'pages/single-news';
+@import 'pages/contacts';
+@import 'pages/media';
 
 @import 'core/responsive';
