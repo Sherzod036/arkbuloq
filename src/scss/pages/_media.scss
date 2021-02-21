@@ -23,8 +23,8 @@
     &-wrapper {
       position: relative;
       display: block;
-      width: 55%;
-      height: 75%;
+      width: 80%;
+      height: 80%;
     }
     &-pic {
       width: 100%;
@@ -114,11 +114,12 @@
     opacity: 1;
     height: auto;
     visibility: visible;
-    transition: 0.5s;
+    transition: opacity 0.5s;
     &--disabled {
       height: 0;
       visibility: hidden;
       opacity: 0;
+      overflow: hidden;
     }
   }
 
@@ -175,6 +176,7 @@
       height: 0;
       visibility: hidden;
       opacity: 0;
+      overflow: hidden;
     }
   }
 

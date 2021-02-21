@@ -5,6 +5,9 @@
     margin-top: 60px;
     margin-bottom: 100px;
   }
+  &__title {
+    display: block;
+  }
   &__subtitle {
     display: block;
     font-weight: 500;
@@ -82,7 +85,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 65%;
+    width: 68%;
     height: 780px;
     background: #f6f6f6;
   }
@@ -172,8 +175,4 @@
     color: $dark;
     opacity: 0.05;
   }
-}
-
-.fix-title {
-  display: block;
 }

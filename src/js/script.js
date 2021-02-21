@@ -198,7 +198,7 @@ function splitScroll() {
       triggerElement: '.breadcrumbs',
       triggerHook: 0,
     })
-      .setPin('.fix-title')
+      .setPin('.page-investors__title')
       .addTo(controller);
   }
 }
